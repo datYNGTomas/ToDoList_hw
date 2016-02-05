@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ToDoList</string>
+    <string name="hint_editText">To Do For %s</string>
+    <string name="save_button">Save</string>
 
     <string-array name="days_of_the_week">
         <item>Sunday</item>

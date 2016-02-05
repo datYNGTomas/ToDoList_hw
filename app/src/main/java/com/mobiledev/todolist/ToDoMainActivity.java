@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class ToDoMainActivity extends AppCompatActivity {
@@ -12,6 +13,12 @@ public class ToDoMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_to_do_main);
+
+        Button prevDay = (Button) findViewById(R.id.prev_day_button);
+        Button nextDay = (Button) findViewById(R.id.next_day_button);
+        Button saveButton = (Button) findViewById(R.id.save_middle_button);
+
+
         Toolbar mToolbar = (Toolbar) findViewById(R.id.date_toolbar);
         setSupportActionBar(mToolbar);
 
