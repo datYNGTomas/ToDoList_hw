@@ -17,9 +17,72 @@
         <Spinner
             android:id="@+id/days_of_week"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-        </Spinner>
+            android:layout_height="match_parent" />
 
     </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/trio_buttons_bottom"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prev_day_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="Previous Day" />
+
+        <Button
+            android:id="@+id/save_middle_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/save_button"
+            tools:text="Save" />
+
+        <Button
+            android:id="@+id/next_day_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="Next Day" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/current_day_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_toolbar"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        tools:text="Insert Day" />
+
+    <EditText
+        android:id="@+id/input_editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/trio_buttons_bottom"
+        android:layout_below="@id/current_day_textView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:hint="@string/hint_editText"
+        android:textSize="18sp" />
 
 </RelativeLayout>
