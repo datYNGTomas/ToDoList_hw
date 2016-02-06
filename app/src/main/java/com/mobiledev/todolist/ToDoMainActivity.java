@@ -5,9 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class ToDoMainActivity extends AppCompatActivity {
+
+    private TextView mCurrentdayTextView;
+    private EditText mCurrenDayEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,7 @@ public class ToDoMainActivity extends AppCompatActivity {
         Button nextDay = (Button) findViewById(R.id.next_day_button);
         Button saveButton = (Button) findViewById(R.id.save_middle_button);
 
+        mCurrentdayTextView = (TextView) findViewById(R.id.current_day_textView);
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.date_toolbar);
         setSupportActionBar(mToolbar);

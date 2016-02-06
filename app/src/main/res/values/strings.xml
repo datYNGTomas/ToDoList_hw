@@ -4,6 +4,7 @@
     <string name="save_button">Save</string>
     <string name="prev_day_button">%s</string>
     <string name="next_day_button">%s</string>
+    <string name="current_day_textView">%s</string>
 
     <string-array name="days_of_the_week">
         <item>Sunday</item>
