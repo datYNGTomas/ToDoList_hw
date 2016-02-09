@@ -31,9 +31,10 @@ public class ToDoMainActivity extends AppCompatActivity {
         mCurrenDayEditText = (EditText) findViewById(R.id.input_editText);
 
         String mCurrentDay = mDaysoWeek[Calendar.DAY_OF_WEEK - 1];
+        String mHintEditText = getString(R.string.hint_editText, mDaysoWeek[Calendar.DAY_OF_WEEK - 1]);
 
         mCurrentdayTextView.setText(mCurrentDay);
-        mCurrenDayEditText.setHint(mCurrentDay);
+        mCurrenDayEditText.setHint(mHintEditText);
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.date_toolbar);
         setSupportActionBar(mToolbar);
