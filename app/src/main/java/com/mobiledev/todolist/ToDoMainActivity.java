@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 public class ToDoMainActivity extends AppCompatActivity {
 
     private TextView mCurrentdayTextView;
@@ -26,6 +28,12 @@ public class ToDoMainActivity extends AppCompatActivity {
         String[] mDaysoWeek = getResources().getStringArray(R.array.days_of_the_week);
 
         mCurrentdayTextView = (TextView) findViewById(R.id.current_day_textView);
+        mCurrenDayEditText = (EditText) findViewById(R.id.input_editText);
+
+        String mCurrentDay = mDaysoWeek[Calendar.DAY_OF_WEEK - 1];
+
+        mCurrentdayTextView.setText(mCurrentDay);
+        mCurrenDayEditText.setHint(mCurrentDay);
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.date_toolbar);
         setSupportActionBar(mToolbar);
