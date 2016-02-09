@@ -23,6 +23,8 @@ public class ToDoMainActivity extends AppCompatActivity {
         Button nextDay = (Button) findViewById(R.id.next_day_button);
         Button saveButton = (Button) findViewById(R.id.save_middle_button);
 
+        String[] mDaysoWeek = getResources().getStringArray(R.array.days_of_the_week);
+
         mCurrentdayTextView = (TextView) findViewById(R.id.current_day_textView);
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.date_toolbar);
